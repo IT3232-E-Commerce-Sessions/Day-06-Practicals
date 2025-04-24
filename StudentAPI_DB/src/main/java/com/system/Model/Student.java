@@ -1,7 +1,14 @@
 package com.system.Model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Student {
+	@Id
 	private String StudentID;
+	@Column(name="student_name")
 	private String Name;
 	private int Age;
 	private double GPA;
